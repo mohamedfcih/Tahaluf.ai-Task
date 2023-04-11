@@ -1,0 +1,13 @@
+<button
+  (click)="emitValues()"
+  type="button"
+  class="btn btn-light"
+  [name]="inputValue.name"
+  [ngStyle]="{
+    'font-size': inputValue.fontSize,
+    color: inputValue.fontColor,
+    'background-color': inputValue.bgColor
+  }"
+>
+  {{inputValue.title}}
+</button>

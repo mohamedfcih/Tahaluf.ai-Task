@@ -1,0 +1,29 @@
+<div class="container col-md-9 mt-5">
+  <div class="mb-3">
+    <app-text-box
+      #component1
+      [inputValue]="textBox"
+      (textInputValue)="showData($event, component1)"
+    ></app-text-box>
+  </div>
+  <div class="mb-3">
+    <app-textarea
+      #component2
+      [inputValue]="textarea"
+      (textareaValue)="showData($event, component2)"
+    ></app-textarea>
+  </div>
+  <div class="mb-3">
+    <app-select-box
+      #component3
+      [inputValue]="selectBox"
+      (selectBoxValue)="showData($event, component3)"
+    ></app-select-box>
+  </div>
+
+  <app-button
+    [inputValue]="button"
+    (buttonValue)="showData($event, component4)"
+    #component4
+  ></app-button>
+</div>

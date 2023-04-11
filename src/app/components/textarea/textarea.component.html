@@ -1,0 +1,11 @@
+<label class="form-label" for="textarea">{{inputValue.label}}</label>
+<br />
+<textarea
+  class="form-control"
+  id="textarea"
+  [name]="inputValue.name"
+  [cols]="inputValue.cols"
+  [placeholder]="inputValue.placeholder"
+  [ngStyle]="{ 'font-size': inputValue.fontSize, color: inputValue.fontColor }"
+  (click)="emitValues()"
+></textarea>

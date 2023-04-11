@@ -1,0 +1,15 @@
+<div class="form-control" (click)="emitValues()">
+  <label for="select" class="form-label">{{inputValue.label}}</label>
+  <select
+    class="form-select"
+    name="inputValue.name"
+    id="select"
+    [ngStyle]="{
+      'font-size': inputValue.fontSize,
+      color: inputValue.fontColor
+    }"
+  >
+    <option value="one">one</option>
+    <option value="two">two</option>
+  </select>
+</div>

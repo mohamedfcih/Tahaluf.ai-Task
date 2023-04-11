@@ -1,0 +1,14 @@
+<label class = "form-label" for="text">{{inputValue.label}}</label>
+
+<input
+  class="form-control"
+  type="text"
+  [name]="inputValue.name"
+  [placeholder]="inputValue.placeholder"
+  id="text"
+  [ngStyle]="{
+    'font-size': inputValue.fontSize,
+    color: inputValue.fontColor
+  }"
+  (click)="emitValues()"
+/>
